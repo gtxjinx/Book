@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              xmlns:describe="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical">
-    <LinearLayout
+   <!-- <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="bottom"
@@ -18,7 +19,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/signin_username_et"/>
 
-    </LinearLayout>
+    </LinearLayout>-->
+    <com.example.jinx.bookexchage.DescribeView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        describe:text="@string/用户名"
+        describe:textsize="20sp"
+        android:layout_margin="10dp"
+        ></com.example.jinx.bookexchage.DescribeView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

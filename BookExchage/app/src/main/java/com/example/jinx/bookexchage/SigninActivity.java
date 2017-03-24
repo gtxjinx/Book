@@ -31,7 +31,7 @@ public class SigninActivity extends AppCompatActivity
     {
         signin_button= (Button) findViewById(R.id.signin_signin_bt);
         password= (EditText) findViewById(R.id.signin_psd_et);
-        username= (EditText) findViewById(R.id.signin_username_et);
+       // username= (EditText) findViewById(R.id.signin_username_et);
         auto_checkbox= (CheckBox) findViewById(R.id.signin_cb);
 
         ///////////////////////////////////////////
