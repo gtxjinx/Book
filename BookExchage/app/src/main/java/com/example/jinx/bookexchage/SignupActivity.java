@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import static android.R.attr.password;
+
 /**
  * Created by Jinx on 2017/3/23 18:39.
  * 邮箱：gtxmiracle@buaa.edu.cn
@@ -15,8 +17,8 @@ import android.widget.Toast;
 public class SignupActivity extends AppCompatActivity
 {
     private Button signup_button;
-    private EditText username;
-    private EditText password;
+    private DescribeView username;
+    private DescribeView password;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
@@ -28,8 +30,8 @@ public class SignupActivity extends AppCompatActivity
     private void init()
     {
         signup_button= (Button) findViewById(R.id.signup_signup_bt);
-        username= (EditText) findViewById(R.id.signup_username_et);
-        password= (EditText) findViewById(R.id.signup_psd_et);
+        username= (DescribeView) findViewById(R.id.signup_username);
+        password= (DescribeView) findViewById(R.id.signup_password);
 
         ///////////////////////////////////////
         signup_button.setOnClickListener(new View.OnClickListener()

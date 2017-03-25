@@ -5,13 +5,9 @@
     <string name="用户名">用户名</string>
     <string name="密码">密码</string>
     <string name="下次自动登录">下次自动登录</string>
-    <string-array name="地区">
-        <item>地区</item>
-    </string-array>
-    <string-array name="学校">
-        <item>学校</item>
-    </string-array>
-    <string-array name="出版社">
-        <item>出版社</item>
-    </string-array>
+    <string name="书名">书名</string>
+    <string name="作者">作者</string>
+    <string name="价格">价格</string>
+    <string name="出版社">出版社</string>
+    <string name="图片">图片</string>
 </resources>

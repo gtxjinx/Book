@@ -52,7 +52,7 @@ public class DescribeView extends LinearLayout
         TypedArray typedArray=context.obtainStyledAttributes(attrs,R.styleable.DescribeView);
         String text=typedArray.getString(R.styleable.DescribeView_text);
         tv.setText(text);
-        float size=typedArray.getDimension(R.styleable.DescribeView_textsize,10);
+        float size=typedArray.getDimension(R.styleable.DescribeView_textsize,30);
         tv.setTextSize(TypedValue.COMPLEX_UNIT_PX,size);
     }
 

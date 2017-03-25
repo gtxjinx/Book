@@ -16,9 +16,9 @@ import android.widget.EditText;
 public class SigninActivity extends AppCompatActivity
 {
     private Button signin_button;
-    private EditText username;
-    private EditText password;
     private CheckBox auto_checkbox;
+    private DescribeView username;
+    private DescribeView password;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
@@ -30,8 +30,8 @@ public class SigninActivity extends AppCompatActivity
     private void init()
     {
         signin_button= (Button) findViewById(R.id.signin_signin_bt);
-        password= (EditText) findViewById(R.id.signin_psd_et);
-       // username= (EditText) findViewById(R.id.signin_username_et);
+        password= (DescribeView) findViewById(R.id.signin_password);
+        username= (DescribeView) findViewById(R.id.signin_username);
         auto_checkbox= (CheckBox) findViewById(R.id.signin_cb);
 
         ///////////////////////////////////////////
@@ -42,6 +42,7 @@ public class SigninActivity extends AppCompatActivity
             {
                 Intent intent=new Intent(SigninActivity.this,MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

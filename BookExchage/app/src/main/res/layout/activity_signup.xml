@@ -1,40 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:describe="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
     android:orientation="vertical">
-    <LinearLayout
+    <com.example.jinx.bookexchage.DescribeView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:padding="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/用户名"
-            android:textSize="20sp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/signup_username_et"/>
-
-    </LinearLayout>
-    <LinearLayout
+        describe:text="@string/用户名"
+        describe:textsize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/signup_username"
+        />
+    <com.example.jinx.bookexchage.DescribeView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:padding="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/密码"
-            android:textSize="20sp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/signup_psd_et"/>
-
-    </LinearLayout>
+        describe:text="@string/密码"
+        describe:textsize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/signup_password"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

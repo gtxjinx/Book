@@ -4,45 +4,23 @@
               android:layout_height="match_parent"
               xmlns:describe="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical">
-   <!-- <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:padding="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/用户名"
-            android:textSize="20sp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/signin_username_et"/>
 
-    </LinearLayout>-->
     <com.example.jinx.bookexchage.DescribeView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         describe:text="@string/用户名"
         describe:textsize="20sp"
         android:layout_margin="10dp"
-        ></com.example.jinx.bookexchage.DescribeView>
-    <LinearLayout
+        android:id="@+id/signin_username"
+        />
+    <com.example.jinx.bookexchage.DescribeView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:padding="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/密码"
-            android:textSize="20sp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/signin_psd_et"/>
-
-    </LinearLayout>
+        describe:text="@string/密码"
+        describe:textsize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/signin_password"
+        />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

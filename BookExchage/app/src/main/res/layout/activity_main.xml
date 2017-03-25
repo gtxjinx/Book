@@ -4,42 +4,59 @@
               android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"></LinearLayout>
-    <android.support.v4.view.ViewPager
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/main_vp"></android.support.v4.view.ViewPager>
+        android:layout_height="30dp"
+        android:id="@+id/main_car_ll"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:paddingRight="20dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/car"/>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:background="@color/aliceblue">
+        android:background="@color/aliceblue"
+        android:id="@+id/main_title_ll">
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/buy_gray"
-            android:id="@+id/main_buy_iv"/>
+            android:id="@+id/main_buy_iv"
+            android:onClick="onclick"/>
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/sell_gray"
-            android:id="@+id/main_sell_iv"/>
+            android:id="@+id/main_sell_iv"
+            android:onClick="onclick"/>
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/service_gray"
-            android:id="@+id/main_service_iv"/>
+            android:id="@+id/main_service_iv"
+            android:onClick="onclick"/>
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/me_gray"
-            android:id="@+id/main_me_iv"/>
+            android:id="@+id/main_me_iv"
+            android:onClick="onclick"/>
     </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_vp"
+        android:layout_below="@id/main_car_ll"
+        android:layout_above="@id/main_title_ll"></android.support.v4.view.ViewPager>
 
 
 </RelativeLayout>

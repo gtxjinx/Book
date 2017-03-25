@@ -4,11 +4,60 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:padding="10dp">
     <com.example.jinx.bookexchage.DescribeView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        describe:text="123"></com.example.jinx.bookexchage.DescribeView>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        describe:text="@string/书名"
+        android:layout_margin="10dp"
+        describe:textsize="20sp"/>
+    <com.example.jinx.bookexchage.DescribeView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        describe:text="@string/作者"
+        android:layout_margin="10dp"
+        describe:textsize="20sp"/>
+    <com.example.jinx.bookexchage.DescribeView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        describe:text="@string/价格"
+        android:layout_margin="10dp"
+        describe:textsize="20sp"/>
+    <com.example.jinx.bookexchage.DescribeView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        describe:text="@string/出版社"
+        android:layout_margin="10dp"
+        describe:textsize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/图片"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/add"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/add"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/add"/>
+    </LinearLayout>
 
 
 
