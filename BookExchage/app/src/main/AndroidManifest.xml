@@ -18,7 +18,7 @@
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".SignupActivity"></activity>
         <activity android:name=".SigninActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" android:windowSoftInputMode="adjustPan|stateHidden"></activity>
     </application>
 
 </manifest>
